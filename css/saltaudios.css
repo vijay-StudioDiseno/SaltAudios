@@ -1,0 +1,503 @@
+
+/*---------- PRE-LOADER ---------- */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image: url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+/*---------- HTML/BODY ----------*/
+
+html {
+  	position: relative;
+  	min-height: 100%;
+}
+body {
+	color: #fff;
+}
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	outline: none;
+	text-decoration: none;
+}
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+hr.star-primary:after {
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+hr.star-primary {
+    border-color: #2c3e50;
+}
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #adadad;
+}
+.img-centered {
+    margin: 0 auto;
+}
+@font-face {
+	font-family: "HelveticaNeue UltraLight";
+	src: url(../fonts/HelveticaNeue-UltraLight.otf);
+}
+
+
+/*---------- SECTION - HOME ----------*/
+
+#home { 
+	background: url(../img/home_bg.png) 50% 0 fixed;
+	background-size: cover; 
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative; 
+	padding: 30% 0;
+}
+#home .home-content, #brands .brands-content {
+	background-color: rgba(2, 2, 2, 0.6);
+	color: #fff;
+	padding: 25px;
+}
+#home .home-content h1, #brands .brands-content h1 {
+	font-family: "HelveticaNeue UltraLight", Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	margin: 0 0 20px;
+	padding:0;
+}
+#home .home-content .btn-default {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding:0;
+	margin-right: 20px;
+}
+#home .home-content .btn-default:hover,
+#home .home-content .btn-default:focus, 
+#home .home-content .btn-default:active, 
+#home .home-content .btn-default.active, 
+#home .home-content .open .dropdown-toggle.btn-default {
+	box-shadow: none !important;
+}
+#home .home-content .btn-default .glyphicon {
+	top: -1px;
+	left: 8px;
+}
+
+
+/*---------- NAVIGATION ----------*/
+
+#header .navbar-default {
+	background-color: rgba(193, 14, 14, 0.7);
+	border: none;
+}
+#header .navbar-fixed-top {
+	top: 35px;
+}
+#header .navbar-brand { padding:0; padding-top: 15px; height: 100%;}
+#header .navbar-login .nav li a:hover,
+#header .navbar-login .nav li a:focus { background-color: transparent;}
+
+#header .navbar-login .contactExt01 { max-width: 170px; margin-left: 12px; color: #fff;}
+#header .navbar-login  .loginExt01 { max-width: 150px;  margin-left: 12px; color: #fff;}
+
+#header .navbar-login ul li.nav-divider { height: 28px; width: 1px; margin-top: 11px;}
+
+
+/*---------- SECTION - SOLUTIONS ----------*/
+
+.solutions01 { background-color: #990a0a; padding: 4%;}
+.solutions01-img { padding-top: 4%;}
+
+#slide-1 .bcg { background-image: url(../img/saltaudios_group.jpg);}
+.bcg { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 100%; width: 100%;}
+.hsContainer { width: 100%; height: 100%; overflow: hidden; position: relative; padding-top:50%; padding-bottom: 10%;}
+
+.team-img .caption { padding: 1.5%; background-color: rgba(0,0,0,0.5); max-width: 450px; margin-left: 25px;}
+.team-img .caption p { margin: 0; font-size: 18px;}
+
+.team-img-mob { background-color: #333;}
+.team-img-mob .caption01 { padding: 2%; max-width:100%;}
+
+
+.solutions02 { background-color: #c10e0e; padding: 4%;}
+.solutions01 h3, .solutions02 h3 {	font-family: "HelveticaNeue Thin", Arial, Helvetica, sans-serif; margin: 0 0 20px 0;}
+.solutions-content { padding: 15px 25px;}
+
+
+/*---------- SECTION - BRANDS ----------*/
+
+#brands {
+	background: url(../img/audio_sys.png) 50% 0 fixed repeat;
+	background-size: cover; 
+	height: auto;  
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative;
+	padding: 35% 0;
+}
+
+
+/*---------- PARTNERS ----------*/
+
+#partners h2 {
+	font-family: "HelveticaNeue UltraLight", Arial, Helvetica, sans-serif;
+	padding: 10px 0;
+	color: #fff;
+}
+#partners .content-1 {
+	background: url(../img/content_bg1.png) no-repeat center center;
+	background-size: cover;
+}
+#partners .content-2 {
+	background: url(../img/content_bg2.png) no-repeat center center;
+	background-size: cover;
+}
+#partners .portfolio-item {
+    right: 0;
+    margin: 0;
+	text-align: center;
+	padding: 0;
+}
+#partners .portfolio-item img {
+	display: inline-block;
+}
+#partners .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 75px;
+}
+#partners .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,0.7);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+	bottom:0;
+}
+#partners .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+#partners .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+#partners .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+#partners .portfolio-item .portfolio-link .caption .caption-content h3,
+#partners .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+#partners * {
+    z-index: 2;
+}
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	background-color: rgba(0,0,0,0.5);
+}
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+	color: #2C3E50;
+}
+.portfolio-modal .modal-content p {
+	color: #2C3E50;
+}
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+.portfolio-modal .modal-content .modal-body {
+	background-color: #adadad;
+}
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+    opacity: .6;
+}
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #fff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+/*---------- SECTION - CLIENTS ----------*/
+
+#clients {
+	background: url(../img/clients_bg.png) no-repeat center center;
+	background-size: cover;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+#clients .clients {
+	position: relative;
+}
+#clients h1 {
+	font-family: "HelveticaNeue UltraLight", Arial, Helvetica, sans-serif;
+	color: #161616;
+}
+#clients .clients {
+	background: url(../img/bw-tv.png) no-repeat center;
+  	display: block;
+  	height: 357px;
+	width: 509px;
+}
+#clients .clients .carousel {
+	width: 300px;
+ 	right: 36px;
+	top: 17%;
+}
+#clients .clients .carousel .carousel-control.left, #clients .clients .carousel .carousel-control.right {
+	background-image: none;
+}
+#clients .clients .carousel-control .glyphicon-chevron-left, #clients .clients .carousel-control .glyphicon-chevron-right, #clients .clients .carousel-control .icon-prev, #clients .clients .carousel-control .icon-next {
+    width: 15px;
+    height: 15px;
+    margin-top: -10px;
+    margin-left: -15px;
+    font-size: 17px;
+}
+
+
+/*---------- SECTION - CONTACT ----------*/
+
+#contact {
+	background-color: #666;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+#contact h4 {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 18px;
+}
+#contact .form-group {
+	margin-left:0;
+	margin-right:0;
+}
+#contact .form-group {
+	margin-top: 20px;
+}
+#contact .form-group label {
+	padding: 10px 0;
+	font-weight: normal;
+}
+#contact .form-group .btn-default {
+	border-radius: 10px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-weight: 600;
+	padding: 5px 18px;
+}
+#contact .form-group textarea { 
+	resize: none; 
+}
+#contact .contact-left a, #contact .contact-right a {
+	color: #fff;
+}
+#contact .contact-left a:hover, #contact .contact-right a:hover {
+	color: #333;
+}
+#contact .contact-left h4, #contact .contact-right h4 {
+	margin-top: 0; margin-bottom: 0;
+}
+.success-msg { padding: 5px; color: #000; margin-left: 10px; font-weight: 600;}
+
+
+/*---------- FOOTER ----------*/
+footer .footer {
+	padding: 2.5% 0;
+    background-color: #333;
+	-webkit-box-shadow: 0px 0px 50px 0px #000 inset;
+	-moz-box-shadow:    0px 0px 50px 0px #000 inset;
+	box-shadow:         0px 0px 50px 0px #000 inset;
+}
+
+/*---------- RESPONSIVE ----------*/
+
+@media (min-width: 1199px) {
+	
+}
+
+@media (max-width: 1200px) {
+#home { background: url(../img/home_tab_bg.png) no-repeat; background-size: cover; padding-bottom: 125px; }
+#brands { background: url(../img/audio_sys_tab.png) no-repeat; background-size: cover; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.solutions01 p, .solutions02 p { font-size: 12px;}
+}
+
+@media (min-width: 992px) {
+#contact .contact-right { border-left: 1px solid #949494; padding-left: 5%;}
+}
+
+@media (max-width: 991px) {
+#contact .contact-right { border-top: 1px solid #949494; padding-top: 5%;}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+#home .home-content, #brands .brands-content  { padding: 15px; }
+#home .home-content h1 { font-size: 24px;}
+}
+
+@media (min-width: 768px) {
+#header .navbar { 
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out, top .5s ease-in-out, background-color .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out, top .5s ease-in-out, background-color .5s ease-in-out; 
+	transition: background .5s ease-in-out, padding .5s ease-in-out, top .5s ease-in-out, background-color .5s ease-in-out;
+	margin-bottom: 0;
+}
+#header .top-nav-collapse {	top: 0 !important; padding: 5px 0; background-color: rgba(193, 14, 14, 1); }
+#home .home-content, #brands .brands-content { margin-right: 25px;}
+#partners .portfolio-item {	margin: 0; padding: 0;}
+.portfolio-modal .modal-content p { padding: 15px;}
+.portfolio-modal .modal-content .modal-body { margin-top: 8%;}
+#contact .form-group input[type="text"],
+#contact .form-group textarea { height: 50px; border-radius: 0; }
+}
+
+@media (max-width: 767px) {
+body { font-size: 12px;}
+#header .navbar-brand { padding: 10px 10px 0px; height: 100%;}
+#header .navbar-fixed-top {	top: 0 !important;}
+#header .navbar-login { margin-right: 5%;}
+
+#home { padding-top: 30%; }
+#home .home-content, #brands .brands-content  { max-width: 320px;}
+#home .home-content h1, #brands .brands-content h1 { font-size: 20px; text-align: left;}
+#home .home-content p, #brands .brands-content p { text-align: left; }
+#solutions h3 { font-size: 20px; }
+.solutions01 p, .solutions02 p { font-size: 12px;}
+.portfolio-modal .close-modal .lr, .portfolio-modal .close-modal .lr .rl { height: 50px;}
+#clients .clients {	background: url(../img/320x180.png) no-repeat center; width: 320px;}
+#clients .clients .carousel { width: 210px; right: 25px; top: 30%; }
+#contact p { font-size: 12px; }
+#contact address h4{ font-size: 16px;}
+}
+
+@media (max-width: 579px) {
+#home { padding-top: 40%; }
+#brands { background: url(../img/480x480.png) no-repeat; background-size: cover;}
+#clients .clients .carousel { width: 200px; right: 25px; }
+}
+
+@media (min-width: 480px) {
+#contact .form-group input[type="text"],
+#contact .form-group input[type="email"],
+#contact .form-group textarea { height: 50px; border-radius: 0; }
+}
+
+@media (max-width: 479px) {
+#home { background: url(../img/home_bg480x480.png) no-repeat; padding: 125px 0px;}
+#contact .form-group input[type="text"],
+#contact .form-group input[type="email"],
+#contact .form-group textarea { height: 50px; border-radius: 0; }
+}
+
+@media (max-width: 379px) {
+#header .navbar-login .nav li a { padding: 10px 8px;}
+#header .navbar-login { margin-right: 1%;}
+#home { padding: 108px 0; }
+#solutions h3 { font-size: 15px;}
+.solutions01 p, .solutions02 p, .team-img .caption p { font-size: 10px;}
+#clients .clients {	background: url(../img/260x200.png) no-repeat center; width: 260px;}
+#clients .clients .carousel { width: 175px; right: 16px; top: 34%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

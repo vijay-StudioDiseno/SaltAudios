@@ -1,0 +1,13 @@
+html { position: relative; min-height: 100%;}
+body { padding-top: 60px; margin-bottom: 50px; background-color: #666666;}
+#header .navbar-contact { top: 0; padding-top: 0; padding-bottom: 0; background-color: #C10E0E;}
+#header .navbar-contact .navbar-brand { padding-top: 10px;}
+#contact { padding-top: 2%; padding-bottom:2%;}
+#contact .form-group { margin-top: 10px;}
+footer .footer { position: absolute; bottom:0; width: 100%; padding-top: 20px; padding-bottom: 20px;}
+
+@media (max-width: 767px) {
+body {padding-top: 50px;}	
+#contact { padding-top: 5%;}
+#header .navbar-contact .navbar-brand { padding-top: 15px;}
+}
